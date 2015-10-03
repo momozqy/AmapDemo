@@ -1,0 +1,7 @@
+AMapApiV2Demo/bin/AndroidManifest.xml
+*.class
+*.dex
+*.png
+*.txt
+AMapApiV2Demo/bin/AMapApiV2Demo.apk
+AMapApiV2Demo/bin/resources.ap_
