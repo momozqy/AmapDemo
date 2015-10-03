@@ -39,7 +39,6 @@ import com.amap.map3d.demo.poisearch.PoiAroundSearchActivity;
 import com.amap.map3d.demo.poisearch.PoiKeywordSearchActivity;
 import com.amap.map3d.demo.route.RouteActivity;
 import com.amap.map3d.demo.view.FeatureView;
-import com.amap.map3d.demo.R;
 
 /**
  * AMapV2地图demo总汇
@@ -82,7 +81,8 @@ public final class MainActivity extends ListActivity {
 	private static final DemoDetails[] demos = {
 			new DemoDetails(R.string.basic_map, R.string.basic_description,
 					BasicMapActivity.class),
-			new DemoDetails(R.string.base_fragment_map, R.string.base_fragment_description,
+			new DemoDetails(R.string.base_fragment_map,
+					R.string.base_fragment_description,
 					BaseMapFragmentActivity.class),
 			new DemoDetails(R.string.camera_demo, R.string.camera_description,
 					CameraActivity.class),
@@ -146,7 +146,7 @@ public final class MainActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_activity);
-		setTitle("3D地图Demo"+AMap.getVersion());
+		setTitle("3D地图Demo" + AMap.getVersion());
 		ListAdapter adapter = new CustomArrayAdapter(
 				this.getApplicationContext(), demos);
 		setListAdapter(adapter);
